@@ -1,0 +1,15 @@
+1.what is the shortcut emmet used to create boilerplat of HTML?
+answer: !
+2.what is DOCTYPE in HTML?
+answer: this is html version5
+3.what is void element and example for void elements?
+answer: it is an empty tag which does not have any content inside the tag
+4.what is different element and attributes?
+answer:an element is a building block of html.it is used to define a content and structure.
+an attribute provides extra information about an element.
+5.what is HTML entries and why it is need in HTML?
+answer:HTML entities are special codes used to display reserved characters,symbols,or non-keyboard
+6.what is meta tag and why is it used?
+answer:the meta tag has to be placed inside the head tag.it provides information about the web page.
+7.what is the best way to add images in website?
+answer:by using img tag and by using src attribute.

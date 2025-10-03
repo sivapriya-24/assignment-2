@@ -1,0 +1,77 @@
+.bg-container{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 25px;
+    
+   background-color: antiquewhite;
+   background-image:url(https://ik.imagekit.io/4z8covdo9/Full%20stack/todolistbg.png?updatedAt=1700761069523);
+   height: 750px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+h1{
+    color:white ;
+    text-align: center;
+    
+}
+.one{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;    
+}
+.two{
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 460px;
+    
+}
+.three{
+    color:white;
+    font-size:18px ;
+    width:600px;
+    text-align: center;
+    margin: 0;
+    margin-left: 350px;
+}
+.four{
+    color:white;
+    font-size:18px ;
+    width:600px;
+    text-align: center;
+    margin: 0;
+    margin-left: 360px;
+}
+.five{
+    color:white;
+    font-size:18px ;
+    width:600px;
+    text-align: center;
+    margin: 0;
+    margin-left: 365px;
+}
+.six{
+    color:white;
+    font-size:18px ;
+    width:600px;
+    text-align: center;
+    margin: 0;
+    margin-left: 295px;
+}
+.button{
+    background-color: orange;
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+}
+.sev{
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
