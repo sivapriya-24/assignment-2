@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./cat.css">
+</head>
+<body>
+    <div class="2xl:container mx-auto bg-black">
+        <div class="w-[90%] mx-auto flex flex-col justiy-center items-center gap-5 h-screen">
+            <div class="flex flex-col justify-center items-center">
+                <img src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0003.jpg?updatedAt=1761555653020" alt="bulb off" id="bulboff" class="w-[150px] h-[300px]">
+                <img src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0004.jpg?updatedAt=1761555658257" alt="cateye" id="cateye" class="w-[200px] h-[300px]">
+            </div>
+
+            <div class="flex gap-10 justify-center items-center">
+                <button class="py-2 px-8 rounded-lg text-[white] border-2 border-white" id="on">ON</button>
+                <button class="py-2 px-8 rounded-lg text-[white] border-2 border-white" id="off">OFF</button>
+            </div>
+
+            <script>
+                var bulboff=document.getElementById("bulboff");
+                var cateye=document.getElementById("cateye");
+
+                on.addEventListener("click",() => {
+                bulboff.src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0002.jpg?updatedAt=1761555655977";
+                });
+
+                on.addEventListener("click",() => {
+                cateye.src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0001.jpg?updatedAt=1761555658327";
+                });
+
+                off.addEventListener("click",() => {
+                bulboff.src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0003.jpg?updatedAt=1761555653020";
+                });
+
+                off.addEventListener("click",() => {
+                cateye.src="https://ik.imagekit.io/cfooduilj/IMG-20251014-WA0004.jpg?updatedAt=1761555658257";
+                });
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>
