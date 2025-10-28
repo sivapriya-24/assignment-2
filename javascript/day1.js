@@ -1,17 +1,15 @@
 //callback function
 
-function print(a){
-    console.log(a());
-}
-print(() => {
-    console.log("Arrow function");
-});   
+var setI;
+var count=0;
+setI=setInterval(() => {
+    count=count+1;
+    console.log(count);
+},1000);
 
-//getelementbyid and addeventlistener
-<script>
-        var text=document.getElementById("text");
-        var btn=document.getElementById("btn");
-        btn.addEventListener("click",() => {
-            text.textContent="Hello Developers!";
-        });
-</script>
+setTimeout(() => {
+    console.log("overtime");
+    clearInterval(setI);
+},5000);
+
+//<script src="https://cdn.tailwindcss.com"></script>

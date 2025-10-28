@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+            <!--logo-->
+            <div class="bg-green-600 flex justify-between items-center">
+                <h1>Logo</h1>
+
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu md:hidden"id="menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x hidden md:hidden"id="cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+                
+            </div> 
+            
+            <!--navitems-->
+            <div class="bg-red-600 py-3 hidden md:block" id="navitems">
+                <ul class="flex flex-col md:flex-row justify-end items-center gap-5">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Profile</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        var menu=document.getElementById("menu");
+        var cross=document.getElementById("cross");
+        var navitems=document.getElementById("navitems");
+
+        menu.addEventListener("click",() => {
+            menu.classList.toggle("hidden");
+            cross.classList.toggle("hidden");
+            navitems.classList.toggle("hidden");
+        });
+
+        cross.addEventListener("click",() => {
+            menu.classList.remove("hidden");
+            cross.classList.add("hidden");
+            navitems.classlist.add("hidden");
+        });
+    </script>
+    
+</body>
+</html>

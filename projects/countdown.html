@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto flex justify-center items-center h-screen">
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="text-[48px]" id="count">0</h1> 
+                <div class="flex items-center gap-6">
+                    <button class="px-4 py-2 bg-green-600 rounded-lg text-white" id="start">Start</button>
+                    <button class="px-4 py-2 bg-red-600 rounded-lg text-white" id="stop">Stop</button>
+                    <button class="px-4 py-2 bg-blue-600 rounded-lg text-white" id="time">Timer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var count=document.getElementById("count");
+        var start=document.getElementById("start");
+        var stop=document.getElementById("stop");
+        var time=document.getElementById("time");
+
+        var setI;
+      start.addEventListener("click", () => {
+        setI = setInterval(() => {
+          count.textContent = parseInt(count.textContent) + 1;
+        }, 1000);
+      });
+
+        stop.addEventListener("click" ,() => {
+            clearInterval(setI);
+        });
+
+        time.addEventListener("click" ,() => {
+            setTimeout(() => {
+                alert("Overtime");
+                clearInterval(setI);
+        },5000);
+    });
+    </script>
+    
+</body>
+</html>
